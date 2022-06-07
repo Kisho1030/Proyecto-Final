@@ -10,7 +10,8 @@
 
     <script src="jspdf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/signature_pad@4.0.0/dist/signature_pad.umd.min.js"></script>
-    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="control_impresion.css" media="print" />
+    
 </head>
 <body>
     <div class="container mt-4">
@@ -288,6 +289,7 @@
                             <label for="nhijos" class="form-label">Si tienes hijos, ¿Cuántos?</label>
                             <select class="form-select" id="nhijos">
                                 <option value="">Seleccione número de hijos</option>
+                                <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="Más de 3">Más de 3</option>
@@ -475,7 +477,7 @@
 
                     <hr>
 
-                    <button type="submit" class="btn btn-primary mb-4">Generar PDF</button>
+                    <button type="submit" onClick="window.print();" class="btn btn-primary mb-4">Generar PDF</button>
 
                 </form>
             </div>
