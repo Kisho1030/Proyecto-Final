@@ -1,0 +1,31 @@
+
+body{
+    display:inline;
+}
+
+.form-control{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    display: block;
+}
+.form-select{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.custom-file{
+    display: none;
+}
+
+.izq{
+    float: left;
+}
+
+.der{
+    float: right;
+}
+
+#Boton{
+    display: none !important;
+}
